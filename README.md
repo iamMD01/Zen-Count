@@ -1,4 +1,4 @@
-Perfect — here’s a **complete, professional `README.md`** for your widget project **“ZenCount”**, structured to look great on GitHub and ready to drop into your repo folder:
+![Desktop Screenshot](assets/desktop-screenshot.png)
 
 ---
 
@@ -8,7 +8,12 @@ Perfect — here’s a **complete, professional `README.md`** for your widget pr
 It allows you to **add, edit, delete, and manage multiple countdown timers** — all in a clean, intuitive interface that integrates beautifully with your desktop.
 
 ---
+![Status](https://img.shields.io/badge/status-Under%20Development-orange?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-Beta%200.1-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/license-GPL--3.0-green?style=for-the-badge)
+![Platform](https://img.shields.io/badge/KDE%20Plasma-5.27%20%7C%206.x-purple?style=for-the-badge)
 
+---
 ## 🌟 Features
 
 * 🧘 **Minimal & Elegant UI** – Designed to feel native to KDE Plasma.
@@ -17,26 +22,21 @@ It allows you to **add, edit, delete, and manage multiple countdown timers** —
 * ⚡ **Real-Time Updates** – Auto-refresh every minute.
 * 💾 **Persistent Data** – Timers are saved and restored automatically.
 * 🖱️ **Interactive Controls** – Add, edit, or delete timers with one click.
-* 🧩 **Compact & Full Views** – Seamlessly switch between panel and popup views.
 
 ---
 
-## 📸 Preview
+## 📸 Working
+![Desktop Screenshot](assets/Working-of-zen-count.png)
 
-*(You can add screenshots later here)*
 
-```text
-Compact View → shows remaining days/hours  
-Full View → displays all active countdowns with edit & delete options
-```
 
----
 
 ## 📂 Folder Structure
 
 ```
 org.chatgpt.zencount/
 ├── metadata.desktop
+|-- assets
 ├── contents/
 │   ├── ui/
 │   │   └── main.qml
@@ -56,41 +56,21 @@ org.chatgpt.zencount/
 1. Create widget folder:
 
    ```bash
-   mkdir -p ~/.local/share/plasma/plasmoids/org.chatgpt.zencount
+   mkdir -p ~/.local/share/plasma/plasmoids/org.kde.zencount
    ```
 2. Copy all project files into that folder.
 3. Run:
 
    ```bash
-   plasmapkg2 -t plasmoid -i ~/.local/share/plasma/plasmoids/org.chatgpt.zencount
+   plasmapkg2 -t plasmoid -i ~/.local/share/plasma/plasmoids/org.kde.zencount
    ```
 4. If updating:
 
    ```bash
-   plasmapkg2 -t plasmoid -u ~/.local/share/plasma/plasmoids/org.chatgpt.zencount
+   plasmapkg2 -t plasmoid -u ~/.local/share/plasma/plasmoids/org.kde.zencount
    ```
 5. Add it to your desktop or panel from **"Add Widgets" → ZenCount**.
 
----
-
-## 🧠 Usage
-
-* **Left Click** → Open or close full view.
-* **Add Timer** → Create new countdown with name & date.
-* **Edit** → Modify existing timers easily.
-* **Delete** → Remove completed or unnecessary timers.
-* **Compact Mode** → Displays active countdown text (Days/Hours/Minutes left).
-
----
-
-## 🛠️ Configuration Files
-
-| File               | Purpose                                  |
-| ------------------ | ---------------------------------------- |
-| `main.qml`         | Core logic & UI layout for the widget    |
-| `main.xml`         | Defines config keys for saving timers    |
-| `config.qml`       | Links configuration with Plasma settings |
-| `metadata.desktop` | Identifies the widget to Plasma          |
 
 ---
 
@@ -137,5 +117,3 @@ Pull requests are welcome!
 If you find bugs or have feature ideas, open an [issue](../../issues) or submit a PR.
 
 ---
-
-Would you like me to generate a **`metadata.desktop`** that perfectly matches this new project name (`ZenCount`) and avoids errors like the previous “Expected token numeric literal”?
