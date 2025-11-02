@@ -26,7 +26,7 @@ It allows you to **add, edit, delete, and manage multiple countdown timers** —
 ---
 
 ## 📸 Working
-![Desktop Screenshot](assets/Working-of-zen-count.png)
+![Desktop Screenshot](assets/Working-of-zen-counter.png)
 
 
 
